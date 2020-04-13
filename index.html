@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid 19 Estimator Frontend</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container mt-4">
+        <h3>Covid 19 Estimator</h3>
+        <hr class="hr">
+    </div>
+    <div class="container">
+        <div class="col-md-6">
+            <h4>Field in the fields</h4>
+            <hr>
+            <div class="wrapper">
+                <div class="col form-group">
+                    <div class="row">
+                        <div class="col">
+                            <label for="population">Population</label></div>
+                        <div class="col">
+                            <input class="form-control" type="text" name="population" id="population" data-population>
+                        </div>
+                    </div>
+                </div>
+                <div class="col form-group">
+                    <div class="row">
+                        <div class="col">
+                            <label for="timeToElapse">Time To Elapse</label></div>
+                        <div class="col">
+                            <input class="form-control" type="text" name="timeToElapse" id="timeToElapse"
+                                data-time-to-elapse>
+                        </div>
+                    </div>
+                </div>
+                <div class="col form-group">
+                    <div class="row">
+                        <div class="col">
+                            <label for="reportedCases">Reported Cases</label></div>
+                        <div class="col">
+                            <input class="form-control" type="text" name="reportedCases" id="reportedCases"
+                                data-reported-cases>
+                        </div>
+                    </div>
+                </div>
+                <div class="col form-group">
+                    <div class="row">
+                        <div class="col">
+                            <label for="totalHospitalBeds">Total Hospital Beds</label></div>
+                        <div class="col">
+                            <input class="form-control" type="text" name="totalHospitalBeds" id="totalHospitalBeds"
+                                data-total-hospital-beds>
+                        </div>
+                    </div>
+                </div>
+                <div class="col form-group">
+                    <div class="row">
+                        <div class="col">
+                            <label for="periodType">Period Type</label>
+                        </div>
+                        <div class="col">
+                            <select id="my-select" class="form-control" name="periodType" data-period-type>
+                                <option>days</option>
+                                <option>weeks</option>
+                                <option>months</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col form-group">
+                    <div class="row">
+                        <div class="col">
+                            <button class="btn btn-primary" data-go-estimate>Estimate</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-6">
+            <h4>Result</h4>
+            <hr>
+            <div class="wrapper result">
+                <p id='result'></p>
+                <p class='p'>All fields must be field</p>
+                <p class='p1'>Fields must be a number</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/proper.min.js"></script>
+<script src="js/main.js"></script>
+</html>
